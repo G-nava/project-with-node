@@ -1,7 +1,6 @@
-import charactersRouter from './characters.routes';
+import charactersRouter from './characters.routes.mjs';
 
 function routerAPI(app){
   app.use('/character',charactersRouter);// define el end point
 }
-
-module.exports = routerAPI;
+export default routerAPI;
